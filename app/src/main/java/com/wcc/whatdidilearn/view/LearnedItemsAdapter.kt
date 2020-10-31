@@ -35,7 +35,7 @@ class LearnedItemsAdapter: RecyclerView.Adapter<LearnedItemsAdapter.LearnedItemV
     }
 
     override fun onBindViewHolder(holder: LearnedItemViewHolder, position: Int) {
-        val itemLearnedToShow: ItemLearned = data.get(position)
+        val itemLearnedToShow: ItemLearned = data[position]
         holder.bind(itemLearnedToShow.title, itemLearnedToShow.description, itemLearnedToShow.understandingLevel.color)
     }
 
