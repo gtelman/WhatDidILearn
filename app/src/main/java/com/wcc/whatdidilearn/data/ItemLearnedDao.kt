@@ -1,5 +1,8 @@
 package com.wcc.whatdidilearn.data
-import androidx.room.dao
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Query
+
 import com.wcc.whatdidilearn.entities.ItemLearned
 
 @Dao

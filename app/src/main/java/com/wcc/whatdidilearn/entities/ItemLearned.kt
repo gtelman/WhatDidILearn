@@ -1,6 +1,8 @@
 package com.wcc.whatdidilearn.entities
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName= "learned_Item")
 data class ItemLearned(
@@ -13,7 +15,7 @@ data class ItemLearned(
     @ColumnInfo(name = "item_understanding_level")
     val understandingLevel: UnderstandingLevel,
 
-    @PrimaryKey(autogenerate = true)
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "item_id")
     val id:Int = 0,
 )
